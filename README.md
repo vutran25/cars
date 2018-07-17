@@ -13,6 +13,7 @@ Your job is to create the logic to generate metrics for the customer wait times:
 
 In addition, you need to list out the agents with their performance:
 * Deals closed
+* Revenue generated for the showroom
 * Earnings, split out into commission and bonus amounts
 
 The showroom is providing you with test data for agents and customers for an integration test of your software. Conduct your test with 5 agents and 100 customers. In addition, they insist that you write unit tests so they can be confident your logic works.
