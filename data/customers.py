@@ -10,6 +10,7 @@ def customers(count):
     """
     Generate customers, trying to keep within business hours.
     """
+    car_choices = range(len(CARS))
     today = datetime.today()
     next_time = datetime(today.year, today.month, today.day, 8)
     for _ in range(count):
@@ -20,7 +21,7 @@ def customers(count):
         next_time = next_time + arrival_gap
         yield {
             "arrival_time": next_time,
-            "interest": random.randint(0, len(CARS)),
+            "interest": random.choice(car_choices),
             "sale_closed": random.random() > 0.7
         }
         if next_time.hour > 17:
