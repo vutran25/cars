@@ -2,6 +2,9 @@
 Dealer data.
 """
 
+
+HOURS = 8, 17
+
 # All references to cars are based on the index into this list.
 CARS = [
     {
