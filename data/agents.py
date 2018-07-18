@@ -14,7 +14,7 @@ def agents(count):
     for _ in range(count):
         yield {
             "agent_id": "".join(random.choices(string.digits, k=6)),
-            "expertise": random.choices(car_choices, k=len(CARS)),
+            "expertise": random.sample(car_choices, k=len(CARS)),
             "service_time": random.randint(3, 5),
             "rating": round(random.random(), 3)
         }
